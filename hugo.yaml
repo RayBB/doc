@@ -1,18 +1,12 @@
 baseURL: https://doc.wallabag.org
 title: wallabag documentation
 
-theme: hextra
-
 defaultContentLanguage: en
 languages:
   en:
     contentDir: content/en/
     languageName: English
     weight: 1
-  fr:
-    contentDir: content/fr/
-    languageName: Français
-    weight: 2
 
 menu:
   main:
@@ -51,3 +45,7 @@ params:
     copy:
       enable: true
       display: hover
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
